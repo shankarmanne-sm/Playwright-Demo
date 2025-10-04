@@ -67,3 +67,46 @@ Each status file contains: status, title and file path (and duration if availabl
 ## Commit and push
 
 If you want these changes pushed upstream, say so and I will commit and push the README and helper script for you.
+
+## Adding new test cases (GitHub + Playwright)
+
+Follow these simple steps to add a new test and deliver it via GitHub:
+
+1. Create a new branch locally (use a descriptive name):
+
+```powershell
+git checkout -b feat/add-my-test
+```
+
+2. Add a new test file under `tests/`, e.g. `tests/my-feature.spec.js`.
+	- Use the existing tests for style: `const { test, expect } = require('@playwright/test')`
+	- Keep each `test()` focused and idempotent.
+
+3. Run the new test locally and iterate until it passes:
+
+```powershell
+npx playwright test tests/my-feature.spec.js --headed   # for interactive debugging
+npx playwright test tests/my-feature.spec.js            # headless CI-like run
+```
+
+4. Optionally use the helper to record per-spec results:
+
+```powershell
+.\scripts\run-and-record.ps1 tests\my-feature.spec.js
+```
+
+5. Commit and push your branch, then open a Pull Request on GitHub:
+
+```powershell
+git add tests/my-feature.spec.js
+git commit -m "tests: add my-feature.spec.js"
+git push --set-upstream origin feat/add-my-test
+```
+
+6. Review CI results and feedback, then merge the PR when green.
+
+Tips:
+- Name files with `.spec.js` and keep tests small (one assertion group per test).
+- Use `--headed` and `PWDEBUG=1` for interactive debugging if selectors fail.
+- Avoid committing large artifacts (screenshots, videos) — these are stored in `test-results/` and typically ignored.
+
