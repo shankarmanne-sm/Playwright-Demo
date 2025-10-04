@@ -1,3 +1,13 @@
+/**
+ * Scenario: Google search for "Playwright MCP in Copilot"
+ *
+ * Steps:
+ * 1. Open Google in an incognito (new) browser context.
+ * 2. Dismiss any consent/sign-in popups that may block the search input.
+ * 3. Type "Playwright MCP in Copilot" into the search input and submit.
+ * 4. Wait for search results to appear and assert that results contain the search term.
+ * 5. Capture debug screenshots when helpful for failures.
+ */
 const { test, expect, chromium } = require('@playwright/test');
 
 test('Google search for Playwright MCP in Copilot (incognito, headless)', async () => {
