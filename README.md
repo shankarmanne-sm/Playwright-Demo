@@ -16,6 +16,38 @@
 - `tests/example.spec.js`: Sample Playwright test for Playwright homepage.
 - `tests/google-search.spec.js`: Test for searching "Playwright MCP in Copilot" on Google.
 
+## Adding new tests
+
+When you add a new test, follow these simple guidelines:
+
+- Location: place test files under the `tests/` directory.
+- Filename: use the pattern `<name>.spec.js` (Playwright will pick up `*.spec.js`).
+- Contract: each test file should import Playwright's test helpers and export one or more `test()` cases. Keep tests small and deterministic.
+
+Minimal example (save as `tests/my-new-test.spec.js`):
+
+```js
+const { test, expect } = require('@playwright/test');
+
+test('short description of behavior', async ({ page }) => {
+   await page.goto('https://example.com');
+   // interactions and assertions
+   expect(await page.title()).toContain('Example Domain');
+});
+```
+
+Run a single test file locally:
+
+```powershell
+npx playwright test tests/my-new-test.spec.js -j 1
+```
+
+Commiting guidance:
+
+- Add and commit only test source files (avoid committing run artifacts like `screenshots/` or `test-results/`).
+- If you want to keep run artifacts locally, add a `.gitignore` entry for `screenshots/` and `test-results/`.
+
+
 ## Running Tests
 
 - Run all tests:
