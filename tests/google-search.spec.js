@@ -1,7 +1,7 @@
 const { test, expect, chromium } = require('@playwright/test');
 
 test('Google search for Playwright MCP in Copilot (incognito, headless)', async () => {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await require('playwright').chromium.launch({ channel: 'chrome', headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto('https://www.google.com/');

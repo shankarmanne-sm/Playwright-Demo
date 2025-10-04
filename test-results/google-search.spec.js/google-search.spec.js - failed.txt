@@ -1,0 +1,4 @@
+status: failed
+title: Google search for Playwright MCP in Copilot (incognito, headless)
+file: google-search.spec.js
+duration_ms: 12397

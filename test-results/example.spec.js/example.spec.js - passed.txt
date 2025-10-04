@@ -1,0 +1,4 @@
+status: passed
+title: basic test
+file: example.spec.js
+duration_ms: 2024

@@ -1,0 +1,4 @@
+status: passed
+title: Open Microsoft Copilot Studio button navigates away or opens popup
+file: copilot-docs.spec.js
+duration_ms: 3749
