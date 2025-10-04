@@ -26,41 +26,46 @@
         - generic [ref=e36]:
           - img [ref=e40]
           - combobox "Search" [ref=e43]
-          - generic [ref=e46]:
-            - button "Search by voice" [ref=e47] [cursor=pointer]:
-              - img [ref=e48] [cursor=pointer]
-            - button "Search by image" [ref=e50] [cursor=pointer]:
-              - img [ref=e51] [cursor=pointer]
-        - generic [ref=e54]:
-          - button "Google Search" [ref=e55] [cursor=pointer]
-          - button "I'm Feeling Lucky" [ref=e56] [cursor=pointer]
-    - contentinfo [ref=e59]:
-      - generic [ref=e60]:
-        - generic [ref=e61]:
-          - link "Advertising" [ref=e62] [cursor=pointer]:
+          - generic [ref=e44]:
+            - generic [ref=e46]:
+              - button "Search by voice" [ref=e47] [cursor=pointer]:
+                - img [ref=e48] [cursor=pointer]
+              - button "Search by image" [ref=e50] [cursor=pointer]:
+                - img [ref=e51] [cursor=pointer]
+            - link "AI Mode" [ref=e53] [cursor=pointer]:
+              - generic [ref=e55] [cursor=pointer]:
+                - img [ref=e57] [cursor=pointer]
+                - generic [ref=e64] [cursor=pointer]: AI Mode
+        - generic [ref=e66]:
+          - button "Google Search" [ref=e67] [cursor=pointer]
+          - button "I'm Feeling Lucky" [ref=e68] [cursor=pointer]
+    - contentinfo [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - link "Advertising" [ref=e74] [cursor=pointer]:
             - /url: https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
-          - link "Business" [ref=e63] [cursor=pointer]:
+          - link "Business" [ref=e75] [cursor=pointer]:
             - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
-          - link "How Search works" [ref=e64] [cursor=pointer]:
+          - link "How Search works" [ref=e76] [cursor=pointer]:
             - /url: https://google.com/search/howsearchworks/?fg=1
-        - link "Applying AI towards science and the environment" [ref=e66] [cursor=pointer]:
+        - link "Applying AI towards science and the environment" [ref=e78] [cursor=pointer]:
           - /url: https://ai.google/societal-impact/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer
-          - generic [ref=e67] [cursor=pointer]: Applying AI towards science and the environment
-        - generic [ref=e68]:
-          - link "Privacy" [ref=e69] [cursor=pointer]:
+          - generic [ref=e79] [cursor=pointer]: Applying AI towards science and the environment
+        - generic [ref=e80]:
+          - link "Privacy" [ref=e81] [cursor=pointer]:
             - /url: https://policies.google.com/privacy?hl=en&fg=1
-          - link "Terms" [ref=e70] [cursor=pointer]:
+          - link "Terms" [ref=e82] [cursor=pointer]:
             - /url: https://policies.google.com/terms?hl=en&fg=1
-          - button "Settings" [ref=e74] [cursor=pointer]:
-            - generic [ref=e75] [cursor=pointer]: Settings
+          - button "Settings" [ref=e86] [cursor=pointer]:
+            - generic [ref=e87] [cursor=pointer]: Settings
   - generic:
     - dialog "Sign in to Google":
-      - generic [ref=e84]:
-        - generic [ref=e85]: Sign in to Google
-        - generic [ref=e86]: Get the most from your Google account
-        - generic [ref=e87]:
-          - button "Stay signed out" [ref=e89] [cursor=pointer]:
-            - generic [ref=e92] [cursor=pointer]: Stay signed out
-          - button "Sign in" [ref=e94] [cursor=pointer]:
-            - generic [ref=e97] [cursor=pointer]: Sign in
+      - generic [ref=e96]:
+        - generic [ref=e97]: Sign in to Google
+        - generic [ref=e98]: Get the most from your Google account
+        - generic [ref=e99]:
+          - button "Stay signed out" [ref=e101] [cursor=pointer]:
+            - generic [ref=e104] [cursor=pointer]: Stay signed out
+          - button "Sign in" [ref=e106] [cursor=pointer]:
+            - generic [ref=e109] [cursor=pointer]: Sign in
 ```
