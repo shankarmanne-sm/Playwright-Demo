@@ -57,10 +57,16 @@ Commiting guidance:
 - To see browser UI, set `headless: false` in your test and run locally (requires graphical environment).
 
 ## Notes
-- Tests include logic to handle pop-ups and overlays.
-- Debug screenshots are saved for troubleshooting failed selectors.
-- All changes are pushed to the remote repository.
 
 ## Next Steps
-- Clone or pull this repo to your local machine.
-- Run Playwright tests in headed mode for interactive debugging.
+Test generator
+---------------
+To quickly scaffold a new test file, a small generator script is included at `scripts/generate-test.js`.
+
+Usage (from repository root):
+
+```powershell
+node scripts/generate-test.js "My new feature test"
+```
+
+This creates `tests/my-new-feature-test.spec.js` with a minimal Playwright test you can edit.
